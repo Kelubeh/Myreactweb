@@ -24,3 +24,42 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+input[type="text"]::placeholder {
+  color: #999;
+}
+input[type="text"]:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+input[type="text"]:disabled::placeholder {
+  color: #ccc;
+}
+input[type="text"].error {
+  border-color: red;
+}
+input[type="text"].error::placeholder {
+  color: red;
+}
+input[type="text"].success {
+  border-color: green;
+}
+input[type="text"].success::placeholder {
+  color: green;
+}
+input[type="text"].warning {
+  border-color: orange;
+}
+input[type="text"].warning::placeholder {
+  color: orange;
+}
